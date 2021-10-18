@@ -76,6 +76,28 @@
         }
       }
     },
+    "swapi-data-access": {
+      "root": "libs/swapi/data-access",
+      "sourceRoot": "libs/swapi/data-access/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/swapi/data-access/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/swapi/data-access"],
+          "options": {
+            "jestConfig": "libs/swapi/data-access/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "swapi-e2e": {
       "root": "apps/swapi-e2e",
       "sourceRoot": "apps/swapi-e2e/src",
@@ -99,6 +121,142 @@
           "outputs": ["{options.outputFile}"],
           "options": {
             "lintFilePatterns": ["apps/swapi-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
+    "swapi-feature-people": {
+      "root": "libs/swapi/feature-people",
+      "sourceRoot": "libs/swapi/feature-people/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": [
+              "libs/swapi/feature-people/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/swapi/feature-people"],
+          "options": {
+            "jestConfig": "libs/swapi/feature-people/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "swapi-feature-species": {
+      "root": "libs/swapi/feature-species",
+      "sourceRoot": "libs/swapi/feature-species/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": [
+              "libs/swapi/feature-species/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/swapi/feature-species"],
+          "options": {
+            "jestConfig": "libs/swapi/feature-species/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "swapi-ui": {
+      "root": "libs/swapi/ui",
+      "sourceRoot": "libs/swapi/ui/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/swapi/ui/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/swapi/ui"],
+          "options": {
+            "jestConfig": "libs/swapi/ui/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "swapi-util-filter": {
+      "root": "libs/swapi/util-filter",
+      "sourceRoot": "libs/swapi/util-filter/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/swapi/util-filter/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/swapi/util-filter"],
+          "options": {
+            "jestConfig": "libs/swapi/util-filter/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "swapi-util-sort": {
+      "root": "libs/swapi/util-sort",
+      "sourceRoot": "libs/swapi/util-sort/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/swapi/util-sort/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/swapi/util-sort"],
+          "options": {
+            "jestConfig": "libs/swapi/util-sort/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "ui": {
+      "root": "libs/ui",
+      "sourceRoot": "libs/ui/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/ui/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ui"],
+          "options": {
+            "jestConfig": "libs/ui/jest.config.js",
+            "passWithNoTests": true
           }
         }
       }

@@ -14,7 +14,19 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@starwars/swapi-data-access": ["libs/swapi/data-access/src/index.ts"],
+      "@starwars/swapi-feature-people": [
+        "libs/swapi/feature-people/src/index.ts"
+      ],
+      "@starwars/swapi/feature-species": [
+        "libs/swapi/feature-species/src/index.ts"
+      ],
+      "@starwars/swapi/ui": ["libs/swapi/ui/src/index.ts"],
+      "@starwars/swapi/util-filter": ["libs/swapi/util-filter/src/index.ts"],
+      "@starwars/swapi/util-sort": ["libs/swapi/util-sort/src/index.ts"],
+      "@starwars/ui": ["libs/ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

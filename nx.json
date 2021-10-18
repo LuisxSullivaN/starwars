@@ -30,9 +30,30 @@
     "swapi": {
       "tags": []
     },
+    "swapi-data-access": {
+      "tags": []
+    },
     "swapi-e2e": {
       "tags": [],
       "implicitDependencies": ["swapi"]
+    },
+    "swapi-feature-people": {
+      "tags": []
+    },
+    "swapi-feature-species": {
+      "tags": []
+    },
+    "swapi-ui": {
+      "tags": []
+    },
+    "swapi-util-filter": {
+      "tags": []
+    },
+    "swapi-util-sort": {
+      "tags": []
+    },
+    "ui": {
+      "tags": []
     }
   }
 }
